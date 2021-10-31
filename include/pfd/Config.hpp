@@ -2,7 +2,7 @@
 
 #include "emp/config/config.hpp"
 
-namespace phylogenetic_fingerprints_demo {
+namespace pfd {
 
   EMP_BUILD_CONFIG(Config,
     GROUP(GLOBAL_SETTINGS, "Global settings"),
@@ -14,4 +14,5 @@ namespace phylogenetic_fingerprints_demo {
     VALUE(HOLD_MAYO, bool, true, "Whether or not to hold the mayo"),
     VALUE(SUPER_SECRET, bool, true, "It's a hidden switch"),
   );
-}
+
+} // namespace pfd

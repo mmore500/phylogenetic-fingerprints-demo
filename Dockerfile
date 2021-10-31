@@ -20,7 +20,21 @@ RUN \
     && \
   apt-get update -qq \
     && \
-  apt-get install -y cmake build-essential python-virtualenv python-pip nodejs tar gzip libclang-7-dev llvm-7 llvm-7-dev clang-7 libstdc++-7-dev gdb \
+  apt-get install -y \
+    build-essential \
+    clang-7 \
+    cmake \
+    gdb \
+    gzip \
+    libclang-7-dev \
+    libsfml-dev \
+    libstdc++-7-dev \
+    llvm-7 \
+    llvm-7-dev \
+    nodejs \
+    python-pip \
+    python-virtualenv \
+    tar \
     && \
   update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 90 \
     && \
