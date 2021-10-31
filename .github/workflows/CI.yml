@@ -11,7 +11,7 @@ jobs:
 
   clang-debug:
     name: Unit Tests (clang, debug mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: clang++
     steps:
@@ -28,7 +28,7 @@ jobs:
 
   gcc-debug:
     name: Unit Tests (gcc, debug mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: g++
     steps:
@@ -45,7 +45,7 @@ jobs:
 
   clang-fulldebug:
     name: Unit Tests (clang, full debug mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: clang++
     steps:
@@ -61,7 +61,7 @@ jobs:
 
   gcc-fulldebug:
     name: Unit Tests (gcc, full debug mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: g++
     steps:
@@ -78,7 +78,7 @@ jobs:
 
   clang-opt:
     name: Unit Tests (clang, opt mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: clang++
     steps:
@@ -94,7 +94,7 @@ jobs:
 
   gcc-opt:
     name: Unit Tests (gcc, opt mode)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: g++
     steps:
@@ -110,7 +110,7 @@ jobs:
 
   coverage:
     name: Coverage
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: clang++
     steps:
@@ -127,7 +127,7 @@ jobs:
 
   docs:
     name: Docs
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
@@ -141,7 +141,7 @@ jobs:
 
   source-clang:
     name: Source (clang)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: clang++
     steps:
@@ -157,7 +157,7 @@ jobs:
 
   source-gcc:
     name: Source (gcc)
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     env:
       CXX: g++
     steps:
@@ -173,7 +173,7 @@ jobs:
 
   deploy-pages:
     name: Deploy to GitHub Pages
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/cut-cookie'
     needs:
       - clang-debug
