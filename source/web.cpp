@@ -25,5 +25,7 @@ int main()
 
   doc << pfd::PhyloFingerprintsPanel{};
 
+  std::cout << "initialization complete" << '\n';
+
   return 0;
 }
